@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { io } from 'socket.io-client'
 import Swal from 'sweetalert2'
 
-const socket = io.connect("http://localhost:3000")
+const socket = io.connect("http://`192.168.1.16:3000")
 
 export default function App() {
   const [message, setMessage] = useState("")
